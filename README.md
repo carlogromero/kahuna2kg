@@ -19,12 +19,21 @@ A full-stack application with React frontend and Python FastAPI backend.
 │   │   ├── routes/
 │   │   └── main.py
 │   ├── tests/
-│   ├── requirements.txt
-│   └── .env.example
+│   └── requirements.txt
+├── .env.example       # Environment variables template
 └── README.md
 ```
 
 ## Getting Started
+
+### Setup Environment
+
+1. Copy the environment template:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Edit `.env` with your actual values
 
 ### API Setup
 
@@ -44,9 +53,9 @@ A full-stack application with React frontend and Python FastAPI backend.
    pip install -r requirements.txt
    ```
 
-4. Run the server:
+4. Run the server (from project root):
    ```bash
-   python src/main.py
+   python api/src/main.py
    ```
 
 5. Run tests:
